@@ -1,0 +1,446 @@
+body{
+    background-color: #F5F5F5;
+}
+header{
+    background-image: url(intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content{
+    text-align: center;
+}
+.header-content h1{
+    font-size: 70px;
+    color: white;
+}
+.header-content p{
+    font-size: 40px;
+    color: white;
+}
+.navbar-nav{
+    position: relative;
+}
+.active::before{
+    content: " ";
+    position: absolute;
+    top: 35px;
+    left: 9px;
+    width: 32px;
+    height: 2px;
+    background-color: white;
+
+}
+ul li{
+    position: relative;
+}
+.lin::after{
+    content: " ";
+    position: absolute;
+    top: 35px;
+    left: 9px;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -ms-transition: width 1s;
+    -o-transition: width 1s;
+}
+.lin:hover::after{
+    width: 39px;
+}
+
+
+/*start about*/
+ section.about{
+    background-color: #F5F5F5;
+}
+.about .image-content h2{
+    font-size: 1rem;
+    color: #544E4E;
+}
+.about .image-content span{
+    font-size: 20px;
+    color: black;
+}
+.skill h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.skill-box p{
+    font-size: 18px;
+}
+.skill-box .left{
+    float:right;
+    position: relative;
+    top: -35px;
+}
+.skill-level{
+    width: 40%px;
+    background-color: #CDE1F8;
+    height: 0.7rem;
+}
+.skill-level .skill-item{
+    background-color: #0078FF;
+    width: 100%;
+    height: 100%;
+}
+.right h3{
+   font-size: 30px;
+   position: relative;
+}
+
+h3::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 92px;
+    height: 3px;
+    background-color: #0078FF;
+}
+.right p{
+    padding-top: 1.5rem;
+    font-size: 20px;
+}
+                                                        /*start services*/
+.services{
+    background-color: #F5F5F5;
+}
+.services-content h2{
+    font-size: 45px;
+    color: #1E1E1E;
+    font-weight: 700;
+}
+.services-content p{
+    position: relative;
+}
+.services-content p::before{
+    content: " ";
+    position: absolute;
+    top: 36px;
+    left: 49%;
+    width: 50px;
+    height: 6px;
+    background-color: #0078FF;
+}
+.services-item{
+    border: 1px solid #F5F5F5;
+    padding: 2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.services-item .icon{
+    width: 120px;
+    height: 120px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 9px solid #0078FF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.services-item h2{
+    font-size: 25px;
+}
+.services-item:hover .icon{
+    background-color: #0078FF;
+    border: 9px solid #CDE1F8;
+    color: white;
+}
+                                                                /*start counter*/
+.counter{
+    background-image: url(counters-bg.jpg);
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    
+}
+.overlay{
+    background-color:#0078ffa8 ;
+    width: 100%;
+    height: 100%;
+    
+}
+.icon-counter{
+    width: 80px;
+    height: 80px;
+    padding: 18px;
+    margin: auto;
+    border: 8px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.icon-counter i{
+    font-size: 30px;
+}
+/*start portofilio*/
+img {
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;      
+  
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+.portofilio-item:hover img{
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+}
+
+.port-item1 p{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-weight: 700;
+}
+.port-item1 span{
+    color: #57A6FF;
+    font-size: 15px;
+    font-weight: 500;
+}
+.port-item1 h5{
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.portofilio-content{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.port-icon{
+    border: 3px solid #0078FF;
+    width: 30px;
+    height: 30px;
+    padding:6px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/*start testmonial*/
+.testmnial{
+    background-image: url(overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    
+}
+.layer{
+    padding: 4rem;
+
+    width: 100%;
+    height: 100%;
+    background-color: #0078ff80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*start blog*/
+.blog{
+    padding: 4rem;
+}
+
+.blog-title .title{
+    width: 70px;
+    height: 30px;
+    background-color: #0078FF;
+    position: absolute;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 15px;
+    
+}
+.blog-content a{
+    text-decoration: none;
+}
+.blog-content a:hover{
+    color: #0078FF;
+}
+.title p
+{
+   font-size: 13px;
+   color: white;  
+}
+.blog-content h2
+{
+    font-size: 20px;
+}
+.blog-info-img img{
+    width: 35px;
+    height: 35px;
+    margin: 15px 5 15px 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+}
+.blog-info{
+    background-color: #F5F5F5;
+}
+/*start contact*/
+.send{
+    margin: 4rem 0;
+}
+.contact{
+    background-image: url(overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+.layout{            /*هنا في ال responsive اللون بتاع 
+    layout نازل لتحت  ايه المشكله*/
+    width: 100%;
+    height: 100%;
+    background-color: #4b9cf0cf;
+    
+
+}
+.send-title{
+    position: relative;
+    z-index: 10;
+    color: #1E1E1E;
+    position: relative;
+}
+
+.send-title::before{
+    content: " ";
+    width: 98px;
+    height: 3px;
+    background-color: #0078FF;
+    position: absolute;
+    top: 46px;
+    left: 0;
+}
+
+.in{
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+textarea{
+    border: 1px solid #CED4DA; 
+    border-radius: 4px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: none;
+    border: 1px solid #0078FF;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: #0078FF;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    
+}
+.touch{
+    margin: 4rem 0;
+}
+
+.list ul{
+    list-style: none;
+    padding: 0;
+    
+}
+.list ul li{
+    padding: 0.3rem 0;
+}
+.list ul li i{
+   color: #0078FF;
+   padding-right: 5px;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+.links ul li{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid #0078FF;
+    margin: 0.7rem 0.7rem 0.7rem 0;
+    transition:  0.5s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+    
+.links ul li i{
+    font-size: 25px;
+}
+.links ul li:hover{
+    background-color: #0078FF;
+    
+    
+}
+.links ul li:hover i{
+    color: white;
+}
+/*start footer*/
+.footer{
+    background-color: #0062D3;
+    
+}
+.footer-content{
+    color: white;
+}
+.footer-content span{
+    font-weight: 700;
+}
